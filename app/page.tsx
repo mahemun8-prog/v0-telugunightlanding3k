@@ -136,12 +136,25 @@ export default function TeluguNightLanding() {
           }
         }}
       >
-        <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tillu%20Anna%20DJ%20Pedithe%20%282%29-jgLs4s88QzA2FOzuKOzXYXpWh26Nl4.mp3" type="audio/mpeg" />
+        <source
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tillu%20Anna%20DJ%20Pedithe%20%282%29-jgLs4s88QzA2FOzuKOzXYXpWh26Nl4.mp3"
+          type="audio/mpeg"
+        />
         Your browser does not support the audio element.
       </audio>
 
       {/* Audio Controls */}
       <div className="fixed top-3 right-3 sm:top-4 sm:right-4 md:top-6 md:right-6 z-50 flex gap-2 sm:gap-3">
+        <button
+          onClick={() => window.open("https://forms.gle/awhWwKirHrRUgRUr6", "_blank")}
+          className="bg-zinc-900/90 backdrop-blur-sm border border-zinc-700/50 rounded-full px-3 py-2.5 sm:px-4 sm:py-3 hover:bg-zinc-800/90 transition-all duration-150 touch-manipulation text-xs sm:text-sm font-medium text-white"
+          style={{
+            boxShadow: "0 0 20px rgba(147, 51, 234, 0.4), 0 0 40px rgba(147, 51, 234, 0.2)",
+          }}
+          aria-label="Add songs suggestions"
+        >
+          Add Songs Suggestions
+        </button>
         <button
           onClick={toggleMute}
           className="bg-zinc-900/90 backdrop-blur-sm border border-zinc-700/50 rounded-full p-2.5 sm:p-3 hover:bg-zinc-800/90 transition-colors duration-150 touch-manipulation"
