@@ -97,10 +97,6 @@ export default function TeluguNightLanding() {
     window.open("https://events.qlora.in/book", "_blank")
   }, [])
 
-  const handleSongsSuggestion = useCallback(() => {
-    window.open("https://forms.gle/awhWwKirHrRUgRUr6", "_blank")
-  }, [])
-
   return (
     <div className="min-h-screen bg-black text-white font-sans relative overflow-x-hidden">
       {/* Background Audio */}
@@ -146,16 +142,6 @@ export default function TeluguNightLanding() {
 
       {/* Audio Controls */}
       <div className="fixed top-3 right-3 sm:top-4 sm:right-4 md:top-6 md:right-6 z-50 flex gap-2 sm:gap-3">
-        <button
-          onClick={handleSongsSuggestion}
-          className="bg-zinc-900/90 backdrop-blur-sm border border-zinc-700/50 rounded-full px-3 py-2.5 sm:px-4 sm:py-3 hover:bg-zinc-800/90 transition-all duration-150 touch-manipulation text-xs sm:text-sm font-medium text-white/90"
-          style={{
-            boxShadow: "0 0 15px rgba(147, 51, 234, 0.3), 0 0 30px rgba(147, 51, 234, 0.2)",
-          }}
-          aria-label="Add songs suggestions"
-        >
-          🎵 Add Songs Suggestions
-        </button>
         <button
           onClick={toggleMute}
           className="bg-zinc-900/90 backdrop-blur-sm border border-zinc-700/50 rounded-full p-2.5 sm:p-3 hover:bg-zinc-800/90 transition-colors duration-150 touch-manipulation"
